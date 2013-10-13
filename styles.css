@@ -1,0 +1,263 @@
+@charset "utf-8";
+@import url("css/browser_resets.css");
+
+/*====================================================== Important ==*/
+html, body { font-family:Arial, Helvetica, sans-serif; font-size: 100%; line-height: 100%; text-align:left; margin: 0px auto; padding: 0px; background:#FFFFFF; }
+img { border:0; margin: 0px; padding: 0px; }
+
+/*====================================================== Typography ==*/
+h1 { font-size: 20px; line-height: 52px; text-align: center; font-family:Calibri, Arial, Helvetica, sans-serif; vertical-align:middle; font-weight:lighter;}
+h1 strong{ color:#0e74bc;}
+h2 { color: #0e74bc; font-size:18px; line-height: 1.3em; margin:0px; text-align:left; font-weight:bold; font-family:Helvetica, Arial, sans-serif; width:100%; }
+h3 { color: #9a1111; font-size: 1em; line-height: 1.3em; margin-bottom: .4em; text-align: left; font-weight:lighter;}
+h4 { color: #4c4c4c; font-size: .8em; line-height: 20px; margin-bottom: .4em; text-align: left;}
+p { color: #4c4c4c; font-size: .8em; line-height: 20px; margin-bottom: 1.8em; text-align:justify;}
+ol, ul { color: #646363; font-size: .8em; line-height: 20px; font-weight:lighter; margin:0px; padding:0px; text-align:left; }
+blockquote p { color: #846762; font-weight: bold; line-height: 1.3em; margin: 15px 0px; font-size: 1.1em;}
+p strong{ font-weight:normal; color:#779775;}
+a:active, a:focus {outline: 0;}
+p.body_highlight { color: #ad7405; font-weight: bold; font-size: .9em; line-height: 1.4em;}
+
+/*====================================================== Header ==*/
+#header{ width:100%; height:140px; padding:0px; margin: 0px auto; position: relative; z-index:100; background:#000000 url(images/inner_bg_top.png) repeat-x scroll left top;}
+#headerwrapper{ width:1000px; height:auto; position:relative; padding:0px; margin:0px auto;}
+#headerwrapper span{ width:593px; height:79px; float:left; position:absolute; left:0px; top:0px; padding:17px 0px 0px 0px; margin:0px auto; cursor:pointer;}
+#headerwrapper .headerright{ width:407px; height:45px; float:right; position:absolute; left:593px; top:0px; padding:30px 0px 21px 0px; margin:0px auto;}
+#headerwrapper .headerright img{ float:right;}
+#headerwrapper .nav{ width:728px; height:44px; float:left; position:absolute; top:96px; left:272px; padding:0px; margin:0px; background:url(images/bg_topnavigation.png) no-repeat scroll right top;}
+.nav ul{ width:688px; height:40px; padding:2px 0px 2px 40px; list-style:none; margin:0; cursor:pointer;}	
+.nav ul li{ padding:0px 12px 0px 12px; margin:0; float:left; font-size:15px; line-height:40px; overflow:auto; bottom:0; display:block; font-family:Calibri, Helvetica, sans-serif; color:#0b0f0c; text-decoration:none; text-align:right; background:url(images/menu_seprater.jpg) no-repeat scroll right center; }
+.nav li a, .nav li a:visited { color:#0b0f0c; text-decoration:none;  }
+.nav li a:hover, .nav li a:active { color:#618506; text-decoration:none; }
+
+
+
+/*====================================================== Pages ==*/
+#contentwrapper{ width:100%; height:auto; position:relative; margin:0px auto; padding:0px 0px 10px 0px; background:#FFFFFF url(images/inner_bg_banner.png) repeat-x scroll left top;}
+#contentwrapper .contentcontainer { width:1000px; height:auto; margin:0px auto; position:relative; padding:0px; overflow:hidden;}
+#contentwrapper .bannercontainer{ width:1000px; height:234px; margin:0px auto; padding:0px; position:relative; overflow:hidden;}
+#contentwrapper .bannercontainer .bannersection_lft{ width:781px; height:234px; float:left; position:relative; margin:0px; padding:0px;}
+#contentwrapper .bannercontainer .bannersection_rgt{ width:219px; height:220px; float:right; position:relative; margin:0px; padding:14px 0px 0px 0px;}
+#contentwrapper .bannercontainer .bannersection_rgt .banner_signup{ width:217px; height:201px; float:left; position:relative; padding:0px; margin:0px; background:url(images/ib_signup.png) no-repeat scroll left top;}
+#contentwrapper .bannercontainer .bannersection_rgt .banner_signup .signupform{ width:122px; height:auto; padding:85px 9px 0px 86px; position:relative; margin:0px; float:left;}
+#contentwrapper .bannercontainer .bannersection_rgt .banner_signup .signupform span{ width:122px; padding:2px 0px 3px 0px; margin:0px; float:left; position:relative;}
+#contentwrapper .bannercontainer .bannersection_rgt .banner_signup .signupform span .field_signup{ width:120px; height:18px; color:#ff9e02; background-color:#FFFFFF; border:1px solid #ddbd4b; line-height:16px; font-size:11px;}
+#contentwrapper .bannercontainer .bannersection_rgt .banner_signup .signupform span .btn_submit{ background:url(images/btn_submit.png) no-repeat scroll left top; width:98px; height:28px; border:0px; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+.contentcontainer .innernavigation{ width:1000px; height:43px; margin:0px auto; position:relative; padding:0px; overflow:hidden;}
+.innernavigation ul{ width:100%; height:43px; list-style:none; margin:0px; padding:0px;}
+.innernavigation ul li{ width:auto; height:43px; display:block; padding:0px 7px 0px 7px; line-height:43px; vertical-align:middle; color:#FFFFFF; font-size:12px; font-family:Calibri, Arial, Helvetica, sans-serif; position:relative; float:left; background:url(images/innernavigation_dividerline.png) no-repeat scroll right top;}
+.innernavigation ul li a, .innernavigation ul li a:visited{ color:#FFFFFF; text-decoration:none;}
+.innernavigation ul li a:hover, .innernavigation ul li a:active{ color:#add64a; text-decoration:none;}
+
+/*------ Page - Home ------*/
+body.home #header{ width:100%; height:140px; padding:0px; margin: 0px auto; position: relative; z-index:100; background:#000000 url(images/bg_top.png) repeat-x scroll left top;}
+body.home #contentwrapper{ width:100%; height:auto; position:relative; margin:0px auto; padding:0px 0px 10px 0px; background:#FFFFFF url(images/bg_homecontentarea.png) repeat-x scroll left top;}
+body.home #contentwrapper .contentcontainer{ width:1000px; height:auto; margin:0px auto; padding:0px; position:relative; overflow:hidden;}
+body.home #contentwrapper .bannercontainer{ width:1000px; height:304px; margin:0px auto; padding:0px; position:relative; overflow:hidden;}
+body.home .bannercontainer .bannersection_left{ width:800px; height:304px; float:left; position:relative; padding:0px; margin:0px auto;}
+body.home .bannercontainer .bannersection_right{ width:200px; height:295px; float:right; position:relative; padding:9px 0px 0px 0px; margin:0px auto;}
+body.home .bannercontainer .bannersection_right .bluebanner{ width:200px; height:161px; margin:0px; padding:0px; background:url(images/bg_hbanner_blue_tonajademof.png) no-repeat scroll left top; position:relative;}
+body.home .bannercontainer .bannersection_right .bluebanner h1{ color:#FFFFFF; font-size:22px; margin:0px; padding:5px 0px 0px 0px; font-family:Impact, Arial, Helvetica, sans-serif; position:relative; line-height:20px; text-indent:-9999px;}
+body.home .bannercontainer .bannersection_right .bluebanner h2{ font-size:10px; text-transform:uppercase; padding:0px; margin:0px; color:#293d03; text-align:center; font-weight:lighter; padding:5px 0px 5px 0px; text-indent:-9999px;}
+body.home .bannercontainer .bannersection_right .banner_signup{ width:100%; height:134px; margin:0px; padding:0px; background:url(images/bg_signup.png) no-repeat scroll left top; position:relative; text-align:center;}
+body.home .banner_signup h4{ color: #FFFFFF; font-size:15px; line-height: 20px; padding:5px 0px 0px 0px; text-align:center; text-transform:uppercase; font-family:Calibri, Arial, Helvetica, sans-serif; font-weight:lighter; text-indent:-9999px; }
+body.home .banner_signup h4 strong{ color:#ffefbf; font-weight:lighter; text-indent:-9999px;}
+body.home .banner_signup .signupform{ width:123px; height:auto; padding:0px 8px 0px 65px; position:relative; margin:0px auto;}
+body.home .banner_signup .signupform span .field_signup{ width:121px; height:18px; color:#4482a4; background-color:#FFFFFF; border:1px solid #ebb7a8; line-height:16px; font-size:11px; margin-bottom:5px;}
+body.home .banner_signup .signupform span{ width:123px; padding:0px 0px 0px 0px; float:left; position:relative;}
+body.home .banner_signup .signupform span .btn_submit{ background:url(images/btn_submit.png) no-repeat scroll left top; width:98px; height:28px; border:0px; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+.fourbanners{ width:1000px; height:137px; position:relative; padding:0px 0px 8px 0px; margin:0px auto;}
+
+/*-------------------------------------------------------------------------------- Left Section --------------------------------------------------------------------------------*/
+.contentcontainer .leftsection{ width:250px; height:auto; float:left; margin:0px; padding:22px 0px 0px 0px; position:relative; overflow:hidden;}
+.leftfloater{ width:250px; height:auto; position:relative; margin:0px; padding:16px 0px 0px 0px; float:right;}
+.contentcontainer .leftsection ul{ width:250px; list-style:none; height:auto; padding:0px 0px 5px 0px;}
+.contentcontainer .leftsection  ul li{ width:211px; background:url(images/leftbtn_bg.png) no-repeat scroll left top; height:30px; padding:5px 0px 12px 39px; color:#525753; font-family:Calibri, Helvetica, sans-serif; font-size:13px;}
+.contentcontainer .leftsection  ul li a, body.home .contentcontainer .leftsection  ul li a:visited{ color:#525753; text-decoration:none;}
+.contentcontainer .leftsection  ul li a:hover, body.home .contentcontainer .leftsection  ul li a:active{ color:#78c301; text-decoration:none;}
+/*--- Inner Page Left Banner - Backyard Wealth Radio Show ---*/
+.leftfloater .ib_lftradioshow{ width:246px; height:auto; margin:0px auto; padding:0px; position:relative; float:left;}
+.ib_lftradioshow .ib_lftradioshowcontainer{ width:246px; height:auto; background:url(images/left_radioshow_bgmid.png) repeat-y scroll left top;}
+.ib_lftradioshow .ib_lftradioshowcontainer h1{ font-family:Impact, Arial, Helvetica, sans-serif; font-size:25px; color:#ff7e00; text-align:center; position:relative; width:100%; padding:8px 0px; margin:0px; line-height:26px; background:url(images/left_radioshow_bgtop.png) no-repeat scroll left top; border-bottom:solid 1px #d8c19e;}
+.ib_lftradioshow .ib_lftradioshowcontainer h1 strong{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; color:#b25b07; position:relative; line-height:20px;}
+.ib_lftradioshow .ib_lftradioshowcontainer ul.radioshowshedule{ width:200px; height: auto; margin:0px; padding:0px 20px 0px 20px; list-style:none; }
+.ib_lftradioshow .ib_lftradioshowcontainer ul.radioshowshedule li{ width:200px; height:auto; line-height:18px; color:#875b18; font-size:13px; font-family:Calibri, Arial, Helvetica, sans-serif; text-align:left; background:none; padding:0px; margin:0px;  }
+.ib_lftradioshow .ib_lftradioshowcontainer h3{ width:200px; height:auto; text-align:left; padding:10px 20px 0px 20px; color:#6b3504; font-size:15px; font-family:Calibri, Arial, Helvetica, sans-serif; line-height:18px; font-weight:bold;}
+.ib_lftradioshow .ib_lftradioshowcontainer .ib_lftradioshowbtmbg{ background:url(images/left_radioshow_bgbtm.png) no-repeat scroll left bottom; width:246px; height:132px; padding:0px; margin:0px; overflow:hidden;}
+.ib_lftradioshow .ib_lftradioshowcontainer h3 strong{ text-align:left; padding:10px 0px 0px 0px; color:#6b3504; font-size:15px; font-family:Calibri, Arial, Helvetica, sans-serif; line-height:18px; font-weight:lighter; position:relative;}
+.ib_lftradioshow .ib_lftradioshowcontainer .ib_lftradioshowbtmbg .btn{ padding:35px 0px 0px 20px; float:left; position:relative; margin:0px;}
+
+/*--- Inner Page Banner - Millionare Mentorship Challenge ---*/
+.ib_millionarechallenge{ width:250px; height:151px; position:relative; float:left; margin:0px; padding:0px; cursor:pointer;}
+.ib_millionarechallenge .ib_mchallenge_lft{ width:245px; height:151px; position:relative; float:left; margin:0px; padding:0px 0px 0px 5px; background:url(images/ib_mchallenge_bg01.png) no-repeat scroll left top;}
+.ib_millionarechallenge .ib_mchallenge_lft .ib_mchallenge_rgt{ width:240px; height:151px; position:relative; float:left; margin:0px; padding:0px 5px 0px 0px; background:url(images/ib_mchallenge_bg03.png) no-repeat scroll right top;}
+.ib_millionarechallenge .ib_mchallenge_lft .ib_mchallenge_rgt .ib_mchallenge_mid{ width:240px; height:151px; position:relative; float:left; margin:0px; padding:0px; background:url(images/ib_mchallenge_bg02.png) repeat-x scroll left top;}
+.ib_millionarechallenge .ib_mchallenge_lft .ib_mchallenge_rgt .ib_mchallenge_mid h1{ font-family:Impact, Arial, Helvetica, sans-serif; font-weight:bold; font-size:26px; color:#d27e02; text-align:left; line-height:35px; padding:10px 0px 0px 10px; width:122px; line-height:30px; float:left;}
+.ib_millionarechallenge .ib_mchallenge_lft .ib_mchallenge_rgt .ib_mchallenge_mid h1 strong{ color:#ff8100;}
+.ib_millionarechallenge .ib_mchallenge_lft .ib_mchallenge_rgt .ib_mchallenge_mid .btn{ width:198px; height:26px; position:relative; margin:0px auto; padding:4px 0px 0px 0px;}
+.ib_millionarechallenge .ib_mchallenge_lft .ib_mchallenge_rgt .ib_mchallenge_mid .img{ width:100%; height:115px; float:right; position:relative; padding:0px 0px 0px 0px; margin:0px; background:url(images/ib_mchallenge_img.png) no-repeat scroll right 4px;}
+
+/*-------------------------------------------------------------------------------- Right Section --------------------------------------------------------------------------------*/
+.contentcontainer .rightsection{ width:207px; height:auto; float:right; padding:22px 0px 0px 6px; margin:0px; position:relative;}
+.rightsection .rightfloater{ width:207px; height:auto; position:relative; margin:0px; padding:16px 0px 0px 6px; float:right; overflow:hidden;}
+/*--- Banner - Get 2010 OFF ---*/
+.rightfloater .getoff{ width:207px; height:234px; margin:0px; padding:0px; float:left; position:relative; cursor:pointer; overflow:hidden;}
+.getoff .title{ width:207px; height:91px; background:url(images/hbanner_getoff_bg1.png) no-repeat left top; position:relative; padding:0px;}
+.getoff .getoff_container{ width:207px; height:141px; background:url(images/hbanner_getoff_bg2.png) no-repeat left top; position:relative; padding:0px; overflow:auto;}
+.getoff .title h1{ font-family:Impact, Arial, Helvetica, sans-serif; font-weight:bold; font-size:25px; color:#FFFFFF; text-align:center; line-height:35px; padding:10px 0px 0px 0px; text-indent:-9999px;}
+.getoff .getoff_container h4{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:14px; color:#7d7c7c; text-align:center; margin:0px; padding:0px; line-height:15px; text-indent:-9999px;}
+.getoff .getoff_container h4 strong{ font-size:16px; color:#000000; text-align:center; font-weight:lighter; text-indent:-9999px;}
+.getoff .getoff_container h3{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:22px; text-align:center; color:#da8e03; margin:0px; text-indent:-9999px;}
+.getoff .getoff_container h2{ font-family:Impact, Arial, Helvetica, sans-serif; font-weight:bold; font-size:26px; color:#1283c2; text-align:center; margin:0px; padding:0px; text-indent:-9999px;}
+/*--- Banner - Backyard Credit Repair ---*/
+.rightfloater .hb_creditrepair{ width:199px; height:182px; margin:0px auto; padding:0px 4px 0px 4px; position:relative; float:left; cursor:pointer; overflow:hidden;}
+.rightfloater .hb_creditrepair .hb_creditrepairwrapper{ width:199px; height:182px; margin:0px auto; padding:0px; position:relative; background:url(images/hb_backyardcreditrepair_bg.png) no-repeat scroll center top;}
+.hb_creditrepairwrapper h2{ font-family:"Trajan Pro", Arial, Helvetica, sans-serif; font-size:30px; color:#FFFFFF; line-height:24px; text-align:center; padding:10px 0px 0px 0px; text-indent:-9999px;}
+.hb_creditrepairwrapper h3{ font-family:"Trajan Pro", Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; color:#FFFFFF; text-align:center; font-weight:bold; padding:5px 0px 0px 0px; text-indent:-9999px;}
+.hb_creditrepairwrapper h4{ font-family:"Myriad Pro", Arial, Helvetica, sans-serif; font-size:16px; color:#ffd800; text-align:center; text-indent:-9999px;}
+.hb_creditrepair .hb_creditrepairwrapper span{ width:154px; margin:0px auto; padding:0px 0px 0px 24px; position:relative; float:left; }
+
+.rightfloater .hb_investingingozone{ width:161px; height:531px; margin:0px; padding:0px 23px 0px 23px; float:left; position:relative; overflow:hidden; cursor:pointer;}
+
+.ib_foundervideo{ width:207px; height:186px; position:relative; float:left; padding:0px; margin:0px; background:url(images/inner_foundervideobg.png) no-repeat scroll left top;}
+.ib_foundervideo .audio{ width:142px; height:107px; position:relative; margin:0px auto; padding:17px 0px 5px 0px;}
+.ib_foundervideo .audio img{ border:solid 1px #6d960f;}
+.ib_foundervideo h1{ color:#FFFFFF; font-size:22px; margin:0px; padding:0px; font-family:Impact, Arial, Helvetica, sans-serif; position:relative; line-height:20px; text-indent:-9999px;}
+.ib_foundervideo h2{ font-size:10px; text-transform:uppercase; padding:0px; margin:0px; color:#FFFFFF; text-align:center; font-weight:lighter; padding:5px 0px 5px 0px; text-indent:-9999px;}
+
+/*-------------------------------------------------------------------------------- Middle Section --------------------------------------------------------------------------------*/
+.contentcontainer .midsection{ width:520px; height:auto; position:relative; float:left; margin:0px; padding:22px 0px 0px 10px;}
+.contentcontainer .midsection h1{ color:#5c8002; line-height:28px; font-size:28px; font-family:Georgia, "Times New Roman", Times, serif; text-align:left; text-transform:none; padding:0px 0px 0px 10px; width:500px; margin:0px; font-weight:bold;}
+.contentcontainer .midsection h1 strong{ font-size:14px; font-style:italic; color:#4f6d05;}
+.contentcontainer .midsection h3 strong{ color:#b68410; line-height:25px; font-size:18px; font-family:Calibri, Arial, Helvetica, sans-serif; text-align:left; text-transform:none; padding:0px 0px 10px 20px; width:500px; font-weight:lighter;}
+.contentcontainer .midsection .midsectioncontainer{ width:520px; height:auto; position:relative; margin:0px 0px; padding:10px 0px 0px 0px; overflow:hidden; float:left;}
+.seminarlistingcontainer{ width:520px; height:auto; position:relative; margin:0px 0px; padding:0px 0px 0px 0px;}
+.midsectioncontainer .seminarlistingcontainer .title{ width:508px; height:28px; text-align:left; color:#000000; padding:40px 0px 10px 12px; font-size:18px; font-family:Georgia, "Times New Roman", Times, serif; background:url(images/seminarvideo_title.png) no-repeat scroll left top;}
+.midsectioncontainer .seminarlistingcontainer h3{ color:#b68410; line-height:25px; font-size:18px; font-family:Calibri, Arial, Helvetica, sans-serif; text-align:center; text-transform:none; padding:0px 0px 10px 20px; width:500px;}
+.midsectioncontainer .textcontainer{ width:500px; padding:0px 0px 0px 20px; float:left; position:relative;}
+.midsectioncontainer .textcontainer p{ color:#5b5b5a; font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; text-align:justify; float:right; width:447px; padding:0px 0px 0px 5px; margin:0px;}
+.midsectioncontainer .textcontainer img{ float:left; position:relative; width:48px; height:auto; margin:0px;}
+.midsectioncontainer .seminarlistingcontainer ul{ width:399px; height:auto; position:relative; list-style:none; padding:0px 60px 0px 61px;}
+.midsectioncontainer .seminarlistingcontainer ul li{ width:366px; height:23px; text-align:left; padding:0px 15px 5px 18px; background:url(images/seminarlisting_bg.png) no-repeat scroll left top; line-height:23px; color:#6a6a6a; vertical-align:middle; font-size:12px; font-family:Calibri, Arial, Helvetica, sans-serif; }
+.midsectioncontainer .seminarlistingcontainer ul li strong{ width:246px; float:left; text-align:left; font-weight:lighter;}
+.midsectioncontainer .seminarlistingcontainer ul li a, .midsectioncontainer .seminarlistingcontainer ul li a:visited{ text-align:right; color:#1283c2; text-decoration:none; width:120px; float:right;}
+.midsectioncontainer .seminarlistingcontainer ul li a:hover, .midsectioncontainer .seminarlistingcontainer ul li a:active{ text-align:right; color:#1283c2; text-decoration:underline; }
+
+/*--- House Info ---*/
+body.home .contentcontainer .midsection .houseinfo{ width:516px; height:auto; position:relative; border:solid 1px #c0c0c0; padding:1px; background-color:#fefefe; overflow:hidden;}
+body.home .contentcontainer .midsection .houseinfo h2{ width:516px; height:30px; background:url(images/houseinfo_title_bg.png) repeat-x scroll left top; line-height:30px; color:#975f00; font-size:16px; font-family:Georgia, "Times New Roman", Times, serif; text-align:center; margin:0px auto; padding:0px 0px 5px 0px; }
+body.home .contentcontainer .midsection .houseinfo ul{ width:516px; height:auto; list-style:none; padding:0px; margin:0px;}
+body.home .contentcontainer .midsection .houseinfo ul li{ width:150px; height:97px; background:url(images/bg_imghouse.png) no-repeat scroll center top; padding:7px 11px 15px 11px; margin:0px; float:left; display:block;}
+
+/*--- Banner - Free EBook ---*/
+.hb_freeebook{ width:246px; height:262px; position:relative; float:left; margin:0px auto; padding:0px;}
+.hb_freeebook .left{ width:241px; height:262px; float:left; padding:0px 0px 0px 5px; background:url(images/hb_freeebook_bg01.png) no-repeat scroll left 0px;}
+.hb_freeebook .left .right{ width:236px; height:259px; padding:0px 5px 0px 0px; margin:0px auto; background:url(images/hb_freeebook_bg03.png) no-repeat scroll right 0px;}
+.hb_freeebook .left .right .mid .title{ width:224px; padding:0px 6px 0px 6px; margin:0px auto;}
+.hb_freeebook .left .right .mid{ width:236px; height:259px; background:url(images/hb_freeebook_bg02.png) repeat-x scroll left 0px;}
+.hb_freeebook .left .right .mid h2{ color:#1c1c1c; width:100%; text-align:center; margin:10px auto; font-size:15px; font-family:Calibri,Arial, Helvetica, sans-serif; font-weight:lighter}
+.hb_freeebook .left .right .mid h2 strong{ font-weight:lighter; font-size:24px;}
+.hb_freeebook .left .right .mid h3{ color:#629404; width:100%; margin:10px auto; text-align:center; font-family:Calibri,Arial, Helvetica, sans-serif; font-size:24px; font-weight:bold;}
+.hb_freeebook .left .right .mid h4{ font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; font-style:italic; color:#213c46; text-align:center; width:100%; margin:10px auto;}
+.hb_freeebook .left .right .mid .field{ width:218px; height:22px; border:solid 1px #a09797; background-color:#FFFFFF; color:#626262; font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; padding:3px 0px 0px 8px; line-height:20px; vertical-align:middle;}
+.hb_freeebook .left .right .mid .btn_submit{ width:100%; height:39px; background:url(images/hb_freeebook_btn_submit.png) no-repeat scroll center top; margin:10px auto; padding:0px 0px 0px 64px; border:none; cursor:pointer; float:none;}
+
+/*--- Banner - Backyard Wealth Radio Show ---*/
+body.home .hb_radioshow{ width:246px; height:251px; position:relative; float:left; margin:0px auto; padding:8px 0px 0px 17px; cursor:pointer;}
+body.home .hb_radioshow .left .right .mid .img{ width:236px; height:192px; padding:69px 0px 0px 0px; position:absolute; top:0px; background:url(images/img_radioshow_tonja.png) no-repeat scroll left 68px; }
+body.home .hb_radioshow .left .right .mid .img .img2{ background:url(images/img_radiospeaker.png) no-repeat scroll right bottom; height:119px; padding:70px 0px 0px 0px; position:relative;}
+body.home .hb_radioshow .left .right .mid .img h3 strong{ font-family:"Myriad Pro", Arial, Helvetica, sans-serif; line-height:16px; color:#FFFFFF; font-size:13px; font-style:italic; position:absolute; top:90px; left:-5px; text-align:left; font-weight:bold;}
+body.home .hb_radioshow .left .right .mid .img h1{ font-family:Impact, Arial, Helvetica, sans-serif; font-size:25px; color:#ff7e00; text-align:center; position:absolute; width:100%; padding:0px; margin:0px; top:18px; line-height:26px;}
+body.home .hb_radioshow .left .right .mid .img h3{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; color:#b25b07; text-align:right; position:absolute; width:100%; top:48px; right:10px; line-height:20px;}
+body.home .hb_radioshow .left .right .mid .img h4{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-align:right; position:absolute; width:100%; top:70px; right:10px; font-style:italic;}
+
+body.seminars .hb_radioshow{ width:246px; height:251px; position:relative; float:left; margin:0px auto; padding:0px 0px 0px 17px; cursor:pointer;}
+body.seminars .hb_radioshow .left .right .mid .img h3 strong{ font-family:"Myriad Pro", Arial, Helvetica, sans-serif; line-height:16px; color:#FFFFFF; font-size:13px; font-style:italic; position:absolute; top:95px; left:-5px; text-align:left; font-weight:bold;}
+.hb_radioshow{ width:246px; height:251px; position:relative; float:right; margin:0px auto; padding:0px; cursor:pointer;}
+.hb_radioshow .left{ width:241px; height:251px; float:left; padding:0px 0px 0px 5px; margin:0px auto; background:url(images/hb_backyard_radiobg01.png) no-repeat scroll left top;}
+.hb_radioshow .left .right{ width:236px; height:251px; padding:0px 5px 0px 0px; margin:0px auto; background:url(images/hb_backyard_radiobg03.png) no-repeat scroll right top;}
+.hb_radioshow .left .right .mid{ width:236px; height:251px; background:url(images/hb_backyard_radiobg02.png) repeat-x scroll left top;}
+.hb_radioshow .left .right .mid .img{ width:236px; height:192px; padding:69px 0px 0px 0px; position:absolute; top:0px; background:url(images/img_radioshow_tonja.png) no-repeat scroll left 60px; }
+.hb_radioshow .left .right .mid .img h1{ font-family:Impact, Arial, Helvetica, sans-serif; font-size:25px; color:#ff7e00; text-align:center; position:absolute; width:100%; padding:0px; margin:0px; top:8px; line-height:26px;}
+.hb_radioshow .left .right .mid .img h3{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:18px; color:#b25b07; text-align:right; position:absolute; width:100%; top:38px; right:10px; line-height:20px;}
+.hb_radioshow .left .right .mid .img h4{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-align:right; position:absolute; width:100%; top:60px; right:10px; font-style:italic;}
+.hb_radioshow .left .right .mid .img h4 strong{color:#b9832f; font-weight:bold; font-family:"Myriad Pro", Arial, Helvetica, sans-serif; font-size:15px; font-style:normal;}
+.hb_radioshow .left .right .mid .img h2{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:25px; position:absolute; top:100px; right:10px; text-align:right; }
+.hb_radioshow .left .right .mid .img .img2{ background:url(images/img_radiospeaker.png) no-repeat scroll right bottom; height:119px; padding:60px 0px 0px 0px; position:relative;}
+.hb_radioshow .left .right .mid .img h3 strong{ font-family:"Myriad Pro", Arial, Helvetica, sans-serif; line-height:16px; color:#FFFFFF; font-size:13px; font-style:italic; position:absolute; top:95px; left:10px; text-align:left; font-weight:bold;}
+/*--- Video ---*/
+.h_video{ width:509px; height:373px; position:relative; margin:0px auto; padding:10px 0px 0px 0px; float:left;}
+.h_video .top{ width:509px; height:368px; position:relative; background:url(images/hvideo_greybg01.png) no-repeat scroll left top; padding:5px 0px 0px 0px;}
+.h_video .top .bottom{ width:509px; height:363px; position:relative; background:url(images/hvideo_greybg03.png) no-repeat scroll left bottom; padding:0px 0px 5px 0px;}
+.h_video .top .bottom .mid{ width:365px; height:334px; position:relative; background:url(images/hvideo_greybg02.png) repeat-y scroll left top; padding:16px 72px 13px 72px;}
+.h_video .top .bottom .mid .greenleft{ width:360px; height:334px; background:url(images/video_greenbg_01.png) no-repeat scroll left top; float:left; padding:0px 0px 0px 5px; position:relative;}
+.h_video .top .bottom .mid .greenright{ width:5px; height:334px; background:url(images/video_greenbg_03.png) no-repeat scroll right top; float:right; padding:0px; position:relative;}
+.h_video .top .bottom .mid .greenleft .greenmid{ width:348px; height:325px; background:url(images/video_greenbg_02.png) repeat-x scroll left top; position:relative; float:left; padding:9px 3px 0px 4px; margin:0px auto;}
+.h_video .top .bottom .mid .greenleft .greenmid h1{ font-family:Impact, Arial, Helvetica, sans-serif; font-size:26px; line-height:30px; color:#FFFFFF; text-align:center; width:348px; position:relative; float:left; margin:0px; padding:0px; text-shadow: 1px 1px 2px #808080;
+}
+.h_video .top .bottom .mid .greenleft .greenmid h4{ font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; color:#4d6304; width:348px; margin:0px; padding:0px; text-align:center;}
+
+
+/*--- Inner Page Banner - Help Center ---*/
+.ib_helpcenter{ width:246px; height:250px; position:relative; float:left; margin:0px auto; padding:0px 0px 0px 0px;}
+/*------ Inner Page - Breadcrum ------*/
+.breadcrum{ width:520px; height:26px; float:left; position:relative; margin:0px auto; padding:0px 0px 20px 0px;}
+.breadcrum .breadcrumcontainer{ width:498px; height:24px; float:left; position:relative; margin:0px; padding:0px 0px 0px 20px; background:url(images/breadcrum_bg.png) repeat-x scroll left top; border:solid 1px #d8d8d8;}
+.breadcrum .breadcrumcontainer ul{ width:498px; height:24px; list-style:none; display:block; float:left; padding:0px; margin:0px; position:relative;}
+.breadcrum .breadcrumcontainer ul li{ height:24px; line-height:24px; color:#4f6d05; text-align:left; font-size:11px; font-family:Arial, Helvetica, sans-serif; vertical-align:middle; padding:0px 0px 0px 5px; float:left; position:relative;}
+.breadcrum .breadcrumcontainer ul li a:link, .breadcrum .breadcrumcontainer ul li a:visited{ background:url(images/breadcrum_divider.png) no-repeat scroll right -4px; color:#323232; text-align:left; text-decoration:none; padding:0px 13px 0px 0px; position:relative; cursor:pointer; height:24px; line-height:24px; vertical-align:middle;}
+.breadcrum .breadcrumcontainer ul li a:hover, .breadcrum .breadcrumcontainer ul li a:active{ color:#4f6d05; text-align:left; text-decoration:none;}
+.breadcrum .breadcrumcontainer ul li .breadcrum_home{ width:auto; height:24px; background:url(images/breadcrum_homeicon.png) no-repeat scroll left 3px; padding:0px 0px 0px 20px;}
+
+
+body.resources .midsectioncontainer{ width:520px; height:auto; position:relative; margin:0px 0px; padding:10px 0px 0px 0px; overflow:hidden; float:left;}
+.midsectioncontainer .bookscontainer{ width:520px; height:auto; float:left; position:relative; margin:0px auto;  padding:0px; }
+.bookscontainer ul{ width:520px; height:auto; list-style:none; position:relative; float:left; margin:0px; padding:0px; overflow:hidden;}
+/* Display 1X3 */
+.bookscontainer ul li.singlesmallcontainer{ width:163px; height:auto; float:left; position:relative; margin:0px; padding:10px 5px; list-style:none; text-align:center; overflow:hidden; }
+.bookscontainer ul li.singlesmallcontainer span{ width:163px; height:auto; position:relative; margin:0px auto; padding:0px; position:relative; float:left;}
+.bookscontainer ul li.singlesmallcontainer span.bookbox{ width:161px; height:334px; position:relative; float:left; margin:0px; padding:0px; border:solid 1px #bfbfbf;}
+.bookscontainer ul li.singlesmallcontainer span .title{ width:153px; height:35px; color:#430801; font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; text-align:center; line-height:18px; margin:0px auto; padding:0px 5px 8px 5px;}
+.bookscontainer ul li.singlesmallcontainer span.bookbox .bookcover{ width:143px; height:200px; background:url(images/resources_cd_bg.png) no-repeat scroll center 5px; padding:8px 11px 10px 9px; margin:0px auto; position:relative; float:left;}
+.bookscontainer ul li.singlesmallcontainer span.bookbox .btn_price{ width:147px; height:42px; position:relative; margin:0px auto; padding:9px 8px 0px 8px; background:url(images/btn_price2.png) no-repeat scroll center top; color:#f07d01; text-align:center; font-size:15px; line-height:15px; font-family:Calibri, Arial, Helvetica, sans-serif; cursor:pointer; text-decoration:none;}
+/* Display 1X2 */
+.bookscontainer ul li.singlelargecontainer{ width:242px; height:auto; float:left; position:relative; margin:0px; padding:10px 9px; list-style:none; text-align:center; overflow:hidden;}
+.bookscontainer ul li.singlelargecontainer span{ width:100%; height:auto; position:relative; margin:0px auto; padding:0px; position:relative; float:left;}
+.bookscontainer ul li.singlelargecontainer span.bookbox{ width:240px; height:334px; position:relative; float:left; margin:0px; padding:0px; border:solid 1px #bfbfbf;}
+.bookscontainer ul li.singlelargecontainer span.title{ width:230px; height:35px; color:#430801; font-family:Calibri, Arial, Helvetica, sans-serif; font-size:16px; text-align:center; line-height:18px; margin:0px auto; padding:0px 5px 8px 5px;}
+.bookscontainer ul li.singlelargecontainer span.bookbox .bookcover{ width:143px; height:200px; background:url(images/resources_cd_bg.png) no-repeat scroll center 5px; padding:8px 49px 10px 48px; margin:0px auto; position:relative; float:left;}
+.bookscontainer ul li.singlelargecontainer span.bookbox .btn_price{ width:169px; height:42px; position:relative; margin:0px auto; padding:9px 35px 0px 39px; background:url(images/btn_price.png) no-repeat scroll center top; color:#f07d01; text-align:center; font-size:15px; line-height:15px; font-family:Calibri, Arial, Helvetica, sans-serif; cursor:pointer; text-decoration:none;}
+.bookscontainer a:link, .bookscontainer a:visited{ font-size:12px; color:#868686; text-decoration:underline; text-align:center; width:163px;}
+.bookscontainer a:hover, .bookscontainer a:active{ color:#868686; text-decoration:none; text-align:center;}
+/* Display 1X1 */
+.bookscontainer .singlemaincontainer{ width:502px; height:auto; position:relative; padding:15px 8px 10px 8px; margin:0px; float:left; background:#f1f1f1 url(images/resourcesmaincontainer_bg.png) repeat-x scroll left top; border:solid 1px #bfbfbf;}
+.singlemaincontainer .bookcover{ width:143px; height:200px; background:url(images/resources_cd_bg.png) no-repeat scroll center 5px; padding:8px 5px 5px 3px; margin:0px auto; position:relative; float:left;}
+.singlemaincontainer p{ width:341px; padding:3px 5px; text-align:left; float:left;}
+.bookscontainer h2{ width:100%; font-size:18px; color:#2f2f2f; font-family:Georgia, "Times New Roman", Times, serif; line-height:22px; text-align:center; font-weight:lighter; padding:12px 0px 8px 0px;}
+.bookscontainer h2 strong{ font-size:15px; font-weight:bold; font-family:Calibri, Arial, Helvetica, sans-serif; font-style:italic; }
+.topborder{ border-top:solid 1px #bcbcbc;}
+/* banner -amazon.com */
+.midsectioncontainer .banner_amazon{ width:518px; height:90px; float:left; position:relative; margin:0px; padding:0px;  border:solid 1px #bcbcbc; background:url(images/amazonbg.png) repeat-x scroll left top; cursor:pointer;}
+.midsectioncontainer .banner_amazon h2{ width:328px; float:left; color:#648908; text-align:left; font-family:Impact, Arial, Helvetica, sans-serif; font-size:26px; padding:20px 0px 0px 20px; line-height:24px;}
+.midsectioncontainer .banner_amazon h2 strong{float:left; color:#648908; text-align:center; font-family:Calibri, Arial, Helvetica, sans-serif; font-style:italic; font-size:15px; margin:0px; padding:0px 0px 0px 50px;}
+.midsectioncontainer .banner_amazon img{ float:right; width:170px; height:90px; position:relative; padding:0px; margin:0px;}
+
+/*====================================================== Footer ==*/
+#footer{ width:100%; height:268px; background:#1f1f1f url(images/footer_bg.png) repeat-x left top; margin:0px auto; padding:0px; color:#999999; font-size:0.7em; vertical-align:middle; font-family:Helvetica, Arial, sans-serif;}
+#footerwrapper{ width:1000px; height:auto; margin:0px auto; padding:0px;}
+/*--- Quick Links ---*/
+#footerwrapper .leftsection{ width:768px; height:auto; position:relative; float:left; margin:0px auto; padding:0px;}
+#footerwrapper .leftsection .title{ width:100%; height:68px; float:left; position:relative; margin:0px; padding:0px;}
+#footerwrapper .leftsection ul{ width:223px; height:auto; list-style:none; float:left; padding:0px 13px 0px 0px;}
+#footerwrapper .leftsection ul li{ width:215px; height:38px; background:url(images/footerlinks_bg.png) repeat-x left top; color:#c4c4b7; padding:0px 0px 13px 7px; line-height:34px; vertical-align:middle; text-align:left; float:left; display:block; font-size:13px; font-family:Calibri,Helvetica,Arial,sans-serif;}
+#footerwrapper .leftsection ul li a{ width:215px; height:38px; color:#c4c4b7; text-decoration:none; line-height:38px; vertical-align:middle;}
+#footerwrapper .leftsection ul li a:hover{ width:215px; height:38px; color:#78c301; text-decoration:none;}
+/*--- Stay Connected ---*/
+#footerwrapper .rightsection{ width:232px; height:auto; position:relative; float:right; margin:0px auto; padding:0px;}
+#footerwrapper .rightsection .title{ width:100%; height:68px; float:right; position:relative; margin:0px; padding:0px;}
+#footerwrapper .rightsection ul{ width:100%; height:35px; list-style:none;}
+#footerwrapper .rightsection ul li{ width:35px; height:35px; display:block; float:left; padding:0px 5px 0px 5px;}
+#footerwrapper .rightsection h3{ font-family:Calibri,Arial, Helvetica, sans-serif; font-size:15px; color:#79a213; text-align:center; line-height:19px; padding:10px 0px 0px 0px; font-weight:lighter;}
+#footerwrapper .rightsection h4{ font-family:Calibri,Arial, Helvetica, sans-serif; font-size:14px; color:#5e5d5d; text-align:center; line-height:19px; padding:10px 0px 0px 0px; font-weight:lighter;}
+/*====================================================== Hacks and Filters ==*/
+.clearfix {clear: both;}
